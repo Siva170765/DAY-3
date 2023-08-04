@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2>Task1 - For the given JSON iterate over all for loops(for, for in, for of and forEach)</h2>
+  <h2>By ...Siva Prakash...</h2>
+  <h3>Sample Input</h3>
+  <pre>
+    let Arr={"users": [
+      {
+        "id": "1",
+        "first_name": "Robert",
+        "last_name": "Schwartz",
+        "email": "rob23@gmail.com"
+      },
+      {
+        "id": "2",
+        "first_name": "Lucy",
+        "last_name": "Ballmer",
+        "email": "lucyb56@gmail.com"
+      },
+      {
+        "id": "3",
+        "first_name": "Anna",
+        "last_name": "Smith",
+        "email": "annasmith23@gmail.com"
+      },
+      {
+        "id": "4",
+        "first_name": "Robert",
+        "last_name": "Brown",
+        "email": "bobbrown432@yahoo.com"
+      },
+      {
+        "id": "5",
+        "first_name": "Roger",
+        "last_name": "Bacon",
+        "email": "rogerbacon12@yahoo.com"
+      }]
+    }
+  </pre>
+  <h3>for loop - Find ID - Sample output</h3>
+  <pre>
+      1
+      2
+      3
+      4
+      5
+  </pre> <hr>
+  <h3>for...in loop - Find First Name - Sample output</h3>
+  <pre>
+    Robert
+    Lucy
+    Anna
+    Robert
+    Roger
+  </pre> <hr>
+  <h3>for...of loop - Find Last Name - Sample output</h3>
+  <pre>
+    Schwartz
+    Ballmer
+    Smith
+    Brown
+    Bacon
+  </pre> <hr>
+  <h3>forEach loop - Find Email Address - Sample output</h3>
+  <pre>
+    rob23@gmail.com
+    lucyb56@gmail.com
+    annasmith23@gmail.com
+    bobbrown432@yahoo.com
+    rogerbacon12@yahoo.com
+  </pre> <hr>
+    
+     
+          
+    
+  <script>
+    let Arr={"users": [
+      {
+        "id": "1",
+        "first_name": "Robert",
+        "last_name": "Schwartz",
+        "email": "rob23@gmail.com"
+      },
+      {
+        "id": "2",
+        "first_name": "Lucy",
+        "last_name": "Ballmer",
+        "email": "lucyb56@gmail.com"
+      },
+      {
+        "id": "3",
+        "first_name": "Anna",
+        "last_name": "Smith",
+        "email": "annasmith23@gmail.com"
+      },
+      {
+        "id": "4",
+        "first_name": "Robert",
+        "last_name": "Brown",
+        "email": "bobbrown432@yahoo.com"
+      },
+      {
+        "id": "5",
+        "first_name": "Roger",
+        "last_name": "Bacon",
+        "email": "rogerbacon12@yahoo.com"
+      }]
+    }
+
+              for(let i= 0;i<Arr.users.length;i++)
+              {
+                  console.log(Arr.users[i].id) ;
+              }
+              for(i in Arr.users){
+                  console.log(Arr.users[i].first_name);  
+              } 
+
+            
+              for(e of Arr.users){
+                  console.log(e.last_name);       
+              }
+
+              Arr.users.forEach((a)=>{
+                  console.log(a.email);
+              });
+
+
+  </script>
+</body>
+</html>
